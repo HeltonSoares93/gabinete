@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Solicitações</h1>
+    </header>
+
+    <div class="container">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+            
+        <label for="">Origem da solicitação</label>
+        <select name="" id=""> 
+                <option value="">Redes Sociais</option>
+                <option value="">WhatsApp Andreza</option>
+                <option value="">Chat Guru</option>
+                <option value="">Central Animal</option>
+                <option value="">Leo do Coque</option>
+                <option value="">Upinha Vet</option>
+                <option value="">Landin page</option>
+            </select>
+
+            <div>
+                <label for="">@Instagram</label>
+                <input type="text" class="insta-input">
+            </div>
+            <div>
+                <label for="">Responsável pelo planilhamento</label>
+                <input type="text" class="resp-input">
+            </div>
+            <hr>
+            Dados do Solicitante<br>
+            
+            <div>
+                <label for="">CPF</label>
+                <input type="text" class="cpf-input">
+            </div>
+            <div>
+                <label for="">Nome completo</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Data de nascimento</label>
+                <input type="date" class="nascimento-input">
+            </div>
+            <div>
+                <label for="">DDD</label>
+                <input type="number" class="ddd-input">
+            </div>
+            <div>
+                <label for="">WhatsApp</label>
+                <input type="text" class="whats-input">
+            </div>
+            <div>
+                <label for="">Logradouro</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Número</label>
+                <input type="text" class="number-input">
+            </div>
+            <div>
+                <label for="">Complemento</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Bairro</label>
+                <input type="text" class="bairro-input">
+            </div>
+            <div>
+                <label for="">Cidade</label>
+                <input type="text" class="cidade-input">
+            </div>
+            <div>
+                <label for="">CEP</label>
+                <input type="text" class="cep-input">
+            </div>
+            <div>
+                <label for="">E-mail</label>
+                <input type="email" class="email-input">
+            </div>
+
+            <div>
+                <label for="">Solicitação</label>
+                <textarea name="" id="" class="textarea-input"></textarea>
+            </div>
+            
+            <div>
+                <input type="submit" name="submit" value="Enviar"
+                class="enviar-button">
+            </div>
+
+        </form>
+    </div>
+
+
+
+</body>
+</html>
